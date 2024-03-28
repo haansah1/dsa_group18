@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 18</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header>
-        <p>dsa group 18</p>
+      <h1>dsa group 18</h1>
+      <h4>Word Counter</h4>
     </header>
+    <p>Finds and displays the 100 most frequent words in a given text. Input the file below or enter the text in the field.</p>
     <div class="body">
-        <div>
-            <form method="" >
-                <div class="div1">
-                    <div class="upload">
-                        <input type="file" name="" id="inputfile">
-                        <button type="submit">clear</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+      <div>
+        <form method="">
+          <div class="div1">
+            <div class="upload">
+              <input type="file" name="" id="inputfile" />
+              <button type="submit">clear</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
     </div>
-    
+
+    <div class="input-div">
+        <input type="text">
+        <button class="btn" style="margin-left: 40px;" id="count">Count</button>
+    </div>
+
     <article>
-        <div class="gen">// <em>Generating 100 most frequent words... <br>Edo aa...</em> </div>
-        <div id="words-container" class="gen">
-            
-        </div>   
+      <!-- <div class="gen">// <em>Generating 100 most frequent words... <br>Edo aa...</em> </div> -->
+      <div class="gen">
+        <p style="width: fit-content; border-bottom: 1px solid gray; padding-bottom: 7px; text-align: center; color: black; margin-top: 25px">
+          The 100 most frequent words in the text are:
+        </p>
+      </div>
+
+      <!-- <div class='word'> Word </div>    <div class='count'> Count</div> -->
+
+      <div id="words-container" class="gen"></div>
     </article>
-    
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
