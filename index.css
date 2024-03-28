@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    background-color: whitesmoke;
+}
+header{
+    display:flex;
+    justify-content: center;
+    padding: 70px 0px 0px 0px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    min-height:35vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px 0px 10px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:2em;
+}
+
+form .div1{
+    display:flex;
+    align-items: center;
+    gap: 1em;
+}
+.info{
+    padding-bottom: 40px;
+    color: grey;
+}
+.upload{
+    width:100vw;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.upload button{ 
+    border:none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 50px;
+    background: black;
+    color:white;
+    font-size: 1.0em;
+    font-weight:500;
+    text-transform: uppercase;
+    transition: background .3s linear;
+}
+
+.upload button:hover{
+    background: white;
+    color:black;
+    transition: background .3s linear;
+    cursor:pointer;
+}
+.gen{
+    padding: 30px 0px 20px 0px;
+    text-align: center;
+    border:none;
+    color: grey;
+}
+.active{
+    margin: 0px 50px;
+    padding: 10px 0px;
+    color: grey;
+    border-bottom: 1px solid rgb(128, 128, 128, .1);
+}
+#words-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+@media (max-width: 550px) {
+    .upload{
+        /* flex-direction: column; */
+        gap: 3em;
+        /* background-color: red; */
+    }
+}
