@@ -72,6 +72,7 @@ form .div1{
     text-align: center;
     border:none;
     color: grey;
+    font-size:.75em
 }
 .active{
     margin: 0px 50px;
